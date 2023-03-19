@@ -12,9 +12,6 @@ var isSubsequence = function(s, t) {
         if(s[j] === t[i]){
             j = j + 1;
         }
-        if(j == s.length){
-            return true;
-        }
     }
-    return false;
+    return s.length === j;
 };
