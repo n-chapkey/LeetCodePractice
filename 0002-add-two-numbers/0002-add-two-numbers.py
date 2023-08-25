@@ -23,9 +23,7 @@ class Solution:
                 val1 = l1.val
             
             if (l2):
-                val2 = l2.val
-            
-
+                val2 = l2.val           
             
             l3.val += val1+val2
             
