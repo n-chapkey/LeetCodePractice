@@ -7,9 +7,11 @@ class Solution(object):
         """
         
         hash = {}
+        
         for i in range(len(nums)):
-            hash[nums[i]] = i
-        for i in range(len(nums)):
-            complement = target-nums[i]
-            if complement in hash and hash[complement] !=i:
-                return[i, hash[complement]]
+            print hash.get(nums[i])
+            if hash.get(nums[i]) >= 0:
+                return [i,hash.get(nums[i])]
+            else:
+                hash[target - nums[i]] = i
+        
